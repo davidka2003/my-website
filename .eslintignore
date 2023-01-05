@@ -1,0 +1,8 @@
+node_modules
+shared/icons
+*.scss
+*.css
+!*.ts
+!*.tsx
+!*.js
+!*.jsx
