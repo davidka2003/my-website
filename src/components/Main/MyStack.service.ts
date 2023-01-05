@@ -1,9 +1,7 @@
 import { useEffect, useRef } from "react";
 import Matter, {
   Bodies,
-  Common,
   Composite,
-  Composites,
   Engine,
   Mouse,
   MouseConstraint,
@@ -68,7 +66,7 @@ const getStack = async (sceneWidth: number) => {
       textureSize.width * scaleY,
       textureSize.height * scaleY,
       {
-        // restitution: 0.5,
+        restitution: 0.5,
         render: {
           fillStyle: "black",
           sprite: {
@@ -97,21 +95,21 @@ const getMouseConstraint = (render: Matter.Render, engine: Matter.Engine) => {
 };
 const getWalls = (cw: number, ch: number) => {
   return [
-    Bodies.rectangle(0, 0, 1, ch * 2, {
+    Bodies.rectangle(0, 0, 4, ch * 2, {
       isStatic: true,
-      render: { fillStyle: "black" },
+      render: { fillStyle: "#53627c1a" },
     }), //left
-    Bodies.rectangle(0, 0, cw * 3, 1, {
+    Bodies.rectangle(0, 0, cw * 3, 4, {
       isStatic: true,
-      render: { fillStyle: "black" },
+      render: { fillStyle: "#53627c1a" },
     }), //top
-    Bodies.rectangle(cw, 0, 1, ch * 2, {
+    Bodies.rectangle(cw, 0, 4, ch * 2, {
       isStatic: true,
-      render: { fillStyle: "black" },
+      render: { fillStyle: "#53627c1a" },
     }), //right
-    Bodies.rectangle(0, ch, cw * 2, 1, {
+    Bodies.rectangle(0, ch, cw * 2, 4, {
       isStatic: true,
-      render: { fillStyle: "black" },
+      render: { fillStyle: "#53627c1a" },
     }), //bottom
   ];
 };

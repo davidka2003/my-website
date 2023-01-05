@@ -1,22 +1,14 @@
 import { STACK_ALL, STACK_DATA } from "@utils/constants/stack";
 import React, { useEffect, useRef } from "react";
 import Section from "./Section";
-import Matter, {
-  Bodies,
-  Common,
-  Composite,
-  Composites,
-  Engine,
-  Mouse,
-  MouseConstraint,
-  Render,
-  World,
-} from "matter-js";
 import styled from "styled-components";
 import { MyStackService } from "./MyStack.service";
 const Scene = styled.div`
   width: 100%;
   height: 300px;
+  canvas {
+    width: 100%;
+  }
 `;
 
 const MyStack = () => {

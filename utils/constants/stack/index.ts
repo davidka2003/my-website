@@ -21,7 +21,7 @@ import MySQL_ICON from "@assets/icons/mysql.svg";
 import REST_ICON from "@assets/icons/restapi.jpeg";
 import GRAPH_ICON from "@assets/icons/graphql.svg";
 import STRAPI_ICON from "@assets/icons/strapi.svg";
-import WEBAPI_ICON from "@assets/icons/webapi.jpeg";
+import WEBAPI_ICON from "@assets/icons/webapi.png";
 import CSHARP_ICON from "@assets/icons/csharp.svg";
 import DOTNET_ICON from "@assets/icons/dotnet.svg";
 import SWAGGER_ICON from "@assets/icons/swagger.svg";

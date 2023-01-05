@@ -24,6 +24,15 @@ const Position = styled.div`
     flex-wrap: wrap;
     img {
       height: 30px;
+      cursor: pointer;
+      :hover {
+        scale: 3;
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.08);
+      }
+      transition: all 0.3s ease;
+      @media only screen and (max-width: 1000px) {
+        height: 20px;
+      }
     }
   }
   hr {
