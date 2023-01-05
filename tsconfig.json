@@ -26,7 +26,7 @@
       "@shared/*": ["shared/*"],
       "@store/*": ["store/*"],
       "@api/*": ["api/*"],
-      "@assets/*": ["src/assets"],
+      "@assets/*": ["src/assets*"],
       "@components/*": ["src/components/*"],
       "@utils/*": ["utils/*"],
       "types": ["types"]
