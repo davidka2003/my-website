@@ -49,7 +49,7 @@ const JobPosition = (props: IJobPositionProps) => {
         {props.stack.map((ent, index) => (
           <img
             key={index}
-            src={"/icons/".concat(ent)}
+            src={STACK_DATA[ent].image}
             alt={STACK_DATA[ent].title}
             title={STACK_DATA[ent].title}
           />

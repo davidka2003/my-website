@@ -10,7 +10,7 @@ import Matter, {
   Render,
   World,
 } from "matter-js";
-import { STACK_ALL } from "@utils/constants/stack";
+import { STACK_ALL, STACK_DATA } from "@utils/constants/stack";
 import { getImageDimensions } from "@utils/matterjs/getImageDimensions";
 
 export const MyStackService = () => {
@@ -59,7 +59,7 @@ export const MyStackService = () => {
 const getStack = async (sceneWidth: number) => {
   const height = 50;
   const elements = STACK_ALL.map(async (ent, index) => {
-    const url = "/icons/".concat(ent);
+    const url = STACK_DATA[ent].image;
     const textureSize = await getImageDimensions(url);
     const scaleY = height / textureSize.height;
     return Matter.Bodies.rectangle(
@@ -101,7 +101,7 @@ const getWalls = (cw: number, ch: number) => {
       isStatic: true,
       render: { fillStyle: "black" },
     }), //left
-    Bodies.rectangle(0, 0, cw * 2, 1, {
+    Bodies.rectangle(0, 0, cw * 3, 1, {
       isStatic: true,
       render: { fillStyle: "black" },
     }), //top
