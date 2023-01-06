@@ -15,10 +15,10 @@ const StyledMobileIntro = styled.div`
   }
   background-color: var(--dark-blue);
   h2 {
-    font-size: 9rem;
+    font-size: 8rem;
   }
   h3 {
-    font-size: 6.5rem;
+    font-size: 6rem;
   }
   .profile {
     align-self: flex-end;
@@ -27,7 +27,7 @@ const StyledMobileIntro = styled.div`
   }
   .name {
     align-self: flex-start;
-    font-size: 10rem;
+    font-size: 9.5rem;
   }
   .contact {
   }
