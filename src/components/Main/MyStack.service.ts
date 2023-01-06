@@ -10,10 +10,12 @@ import Matter, {
 } from "matter-js";
 import { STACK_ALL, STACK_DATA } from "@utils/constants/stack";
 import { getImageDimensions } from "@utils/matterjs/getImageDimensions";
+import { useWindowSize } from "@hooks/other/useWidh";
 
 export const MyStackService = () => {
   const scene = useRef<HTMLDivElement>(null);
   const engine = useRef(Engine.create());
+  const { width, height } = useWindowSize();
   useEffect(() => {
     if (!scene.current) {
       return;
@@ -26,7 +28,7 @@ export const MyStackService = () => {
         return;
       }
 
-      const stack = await getStack(cw);
+      const stack = await getStack(cw, (width ?? 0) <= 768);
       const mouseConstraint = getMouseConstraint(render, engine.current);
       const walls = getWalls(cw, ch);
       Composite.add(engine.current.world, stack);
@@ -54,8 +56,8 @@ export const MyStackService = () => {
   return { scene };
 };
 
-const getStack = async (sceneWidth: number) => {
-  const height = 50;
+const getStack = async (sceneWidth: number, isMobile: boolean) => {
+  const height = isMobile ? 25 : 50;
   const elements = STACK_ALL.map(async (ent, index) => {
     const url = STACK_DATA[ent].image;
     const textureSize = await getImageDimensions(url);
