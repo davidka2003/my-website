@@ -8,6 +8,7 @@ const Position = styled.div`
   gap: 20px;
   h2 {
     color: var(--blue);
+    font-size: 5rem;
   }
 
   ul {
