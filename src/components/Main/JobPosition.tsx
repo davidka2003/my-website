@@ -34,6 +34,10 @@ const Position = styled.div`
         height: 20px;
       }
     }
+    @media only screen and (max-width: 1000px) {
+      gap: 10px;
+      row-gap: 10px;
+    }
   }
   hr {
     background-color: var(--gray);

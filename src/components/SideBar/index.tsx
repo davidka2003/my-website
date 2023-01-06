@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Linkedin from "@assets/icons/linkedin.svg";
+import Instagram from "@assets/icons/instagram.svg";
+import Github from "@assets/icons/github.svg";
 import profilePicture from "@assets/profilePictureMedium.jpeg";
 const StyledSideBar = styled.section`
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   top: 0;
   position: sticky;
   padding: 30px;
@@ -21,7 +25,7 @@ const StyledSideBar = styled.section`
     text-align: center;
   }
   .profile {
-    max-height: 300px;
+    max-height: 250px;
     border-radius: 2em;
   }
   .section {
@@ -29,6 +33,18 @@ const StyledSideBar = styled.section`
     flex-direction: column;
     gap: 15px;
     text-align: left;
+  }
+  .socials {
+    display: flex;
+    gap: 10px;
+    img {
+      height: 30px;
+    }
+    @media only screen and (max-width: 1000px) {
+      img {
+        height: 20px;
+      }
+    }
   }
   @media only screen and (max-width: 768px) {
     display: none;
@@ -60,7 +76,17 @@ const SideBar = ({}: SideBarProps) => {
       </section>
       <section className="section">
         <h2>Social Links</h2>
-        <h3>Contact me</h3>
+        <div className="socials">
+          <a href="https://www.linkedin.com/in/d4v1ds0n/">
+            <img src={Linkedin} alt="Linkedin" />
+          </a>
+          <a href="https://www.instagram.com/d4v1ds0n_/">
+            <img src={Instagram} alt="Instagram" />
+          </a>
+          <a href="https://github.com/davidka2003">
+            <img src={Github} alt="Github" />
+          </a>
+        </div>
       </section>
     </StyledSideBar>
   );

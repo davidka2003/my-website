@@ -19,6 +19,10 @@
 body {
   background-color: var(--white);
   font-family: "Cabin", sans-serif;
+  scroll-behavior: smooth;
+}
+html{
+  overflow-y: scroll;
 }
 
 

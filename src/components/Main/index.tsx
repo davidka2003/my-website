@@ -1,10 +1,10 @@
 import Header from "@components/Header";
+import MobileIntro from "@components/MobileIntro";
 import React from "react";
 import styled from "styled-components";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import MyStack from "./MyStack";
-import Section from "./Section";
 const StyledMain = styled.main`
   flex: 1 0 0;
   background-color: var(--white);
@@ -18,12 +18,16 @@ const StyledMain = styled.main`
       color: var(--black);
     }
   }
+  @media only screen and (max-width: 768px) {
+    padding-left: 0;
+  }
 `;
 interface MainProps {}
 
 const Main = ({}: MainProps) => {
   return (
     <StyledMain>
+      <MobileIntro />
       <Header />
       <div className="content">
         <AboutMe />
