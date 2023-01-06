@@ -12,7 +12,7 @@ const Position = styled.div`
 
   ul {
     list-style: inside;
-    font-size: 3.75rem;
+    font-size: 4rem;
     color: var(--gray);
     line-height: 130%;
     list-style-position: inside;
