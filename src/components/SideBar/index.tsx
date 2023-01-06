@@ -38,7 +38,7 @@ const StyledSideBar = styled.section`
     display: flex;
     gap: 10px;
     img {
-      height: 30px;
+      height: 25px;
     }
     @media only screen and (max-width: 1000px) {
       img {
