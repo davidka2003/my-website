@@ -57,7 +57,7 @@ export const MyStackService = () => {
 };
 
 const getStack = async (sceneWidth: number, isMobile: boolean) => {
-  const height = isMobile ? 25 : 50;
+  const height = isMobile ? 35 : 50;
   const elements = STACK_ALL.map(async (ent, index) => {
     const url = STACK_DATA[ent].image;
     const textureSize = await getImageDimensions(url);
