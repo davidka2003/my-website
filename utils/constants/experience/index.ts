@@ -13,6 +13,7 @@ export const EXPERIENCE: IJobPosition[] = [
       "Frontend optimisation",
       "Blockchain integration",
       "Opensea api integration",
+      "Data visualisation (graphics, flow, etc)",
     ],
     place: "Tel Aviv",
     stack: [
@@ -160,7 +161,8 @@ export const EXPERIENCE: IJobPosition[] = [
     description: [
       "Backend optimisation",
       "Frontend optimisation",
-      "MongoDB queries optimisation",
+      "Database queries optimisation",
+      "CRM optimisation",
       "Redis cache optimisation",
       "Working with Strapi CRM and Graphql server",
     ],
