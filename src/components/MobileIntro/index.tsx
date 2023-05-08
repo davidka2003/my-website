@@ -48,7 +48,7 @@ interface MobileIntroProps {}
 const MobileIntro = ({}: MobileIntroProps) => {
   return (
     <StyledMobileIntro>
-      <img className="profile" src={profilePicture} alt="" />
+      <img className="profile" src={profilePicture} alt="Full Stack developer - David Paley" />
       <h1 className="name">David Paley</h1>
       <div className="middle">
         <h2>Contact me</h2>

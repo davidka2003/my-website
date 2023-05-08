@@ -56,7 +56,7 @@ const SideBar = ({}: SideBarProps) => {
   return (
     <StyledSideBar>
       <header className="header">
-        <img src={profilePicture} alt="" className="profile" />
+        <img src={profilePicture} alt="Full Stack developer - David Paley" className="profile" />
         <h1>David Paley</h1>
       </header>
       <section className="section">
