@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Typed from "react-typed";
 const StyledHeader = styled.header`
   background-color: var(--blue);
-  height: 200px;
+  height: 250px;
   display: flex;
   align-items: center;
   padding: 50px;
