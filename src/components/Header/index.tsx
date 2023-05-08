@@ -27,14 +27,9 @@ const Header = ({}: HeaderProps) => {
   return (
     <StyledHeader>
       <h1 className="title">
-        <Typed
-          strings={JOB_POSITIONS}
-          typeSpeed={40}
-          backSpeed={30}
-          backDelay={2000}
-          loop={true}
-        />
+        <Typed strings={JOB_POSITIONS} typeSpeed={40} backSpeed={30} backDelay={2000} loop={true} />
       </h1>
+      <h1 style={{ display: "none" }}>Full Stack and Blockchain Developer - David Paley</h1>
     </StyledHeader>
   );
 };

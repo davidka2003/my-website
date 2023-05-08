@@ -35,6 +35,8 @@ import TRUFFLE_ICON from "@assets/icons/truffle.png";
 import GANACHE_ICON from "@assets/icons/ganache.svg";
 import SOLIDITY_ICON from "@assets/icons/solidity.svg";
 import HADRHAT_ICON from "@assets/icons/hardhat.svg";
+import AWS_ICON from "@assets/icons/aws.svg";
+import TERRAFORM_ICON from "@assets/icons/terraform.svg";
 
 export enum Stack {
   TYPESCRIPT = "typescript.svg",
@@ -74,6 +76,8 @@ export enum Stack {
   PROTO = "protobuf.svg",
   MICROSERVICES = "microservices.png", //need
   DOCKER = "docker.svg",
+  AWS = "aws.svg",
+  TERRAFORM = "terraform.svg",
   //blockchain
   TRUFFLE = "truffle.png",
   GANACHE = "ganache.svg",
@@ -274,6 +278,16 @@ export const STACK_DATA: Record<
     link: undefined,
     image: HADRHAT_ICON,
   },
+  [Stack.AWS]: {
+    title: "AWS",
+    link: undefined,
+    image: AWS_ICON,
+  },
+  [Stack.TERRAFORM]: {
+    title: "Terraform",
+    link: undefined,
+    image: TERRAFORM_ICON,
+  },
 };
 
 export const STACK_ALL = [
@@ -314,4 +328,6 @@ export const STACK_ALL = [
   Stack.GANACHE,
   Stack.SOLIDITY,
   Stack.HARDHAT,
+  Stack.AWS,
+  Stack.TERRAFORM,
 ];
