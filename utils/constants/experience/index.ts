@@ -14,6 +14,7 @@ export const EXPERIENCE: IJobPosition[] = [
       "Blockchain integration",
       "Opensea api integration",
       "Data visualisation (graphics, flow, etc)",
+      "Provided mentorship and guidance to developers",
     ],
     place: "Tel Aviv",
     stack: [
