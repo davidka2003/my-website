@@ -3,6 +3,45 @@ import { Stack } from "../stack";
 
 export const EXPERIENCE: IJobPosition[] = [
   {
+    title: "Co-Founder & CTO",
+    date: "Apr 2023 - Sep 2023",
+    company: "Meetmap",
+    description: [
+      "Building scalable real-time social app",
+      "Building microservices API with event-driven architecture",
+      "Creating scalable AWS infratracture with terraform",
+      "Serverless video and image processing",
+      "Developing personal recommendations engine with opensearch",
+      "Developing React Native mobile app",
+      "App introduction on meetups",
+    ],
+    place: "Tel Aviv",
+    stack: [
+      Stack.TYPESCRIPT,
+      Stack.GIT,
+      Stack.HTML,
+      Stack.CSS,
+      Stack.SASS,
+      Stack.JS,
+      Stack.STYLED_COMPONENTS,
+      Stack.FRAMER_MOTION,
+      Stack.REACT,
+      Stack.NEXTJS,
+      Stack.WEBPACK,
+      Stack.BABEL,
+      Stack.NODEJS,
+      Stack.NESTJS,
+      Stack.MySQL,
+      Stack.REST,
+      Stack.SWAGGER,
+      Stack.DOCKER,
+      Stack.AWS,
+      Stack.TERRAFORM,
+      Stack.MICROSERVICES,
+    ],
+  },
+
+  {
     title: "Full Stack developer",
     date: "Jan 2023 - now",
     company: "Alsomine",
@@ -20,7 +59,6 @@ export const EXPERIENCE: IJobPosition[] = [
     stack: [
       Stack.TYPESCRIPT,
       Stack.GIT,
-      Stack.JIRA,
       Stack.HTML,
       Stack.CSS,
       Stack.SASS,
