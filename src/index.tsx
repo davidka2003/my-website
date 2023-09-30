@@ -6,14 +6,14 @@ import App from "./App";
 import "./index.scss";
 import { Provider } from "react-redux";
 import { store } from "@store/store";
-import UserWalletProvider from "@hooks/UserWalletProvider";
+// import UserWalletProvider from "@hooks/UserWalletProvider";
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <Router>
-    <UserWalletProvider>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </UserWalletProvider>
+    {/* <UserWalletProvider> */}
+    <Provider store={store}>
+      <App />
+    </Provider>
+    {/* </UserWalletProvider> */}
   </Router>
 );
